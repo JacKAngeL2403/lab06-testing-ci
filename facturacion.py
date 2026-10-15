@@ -17,6 +17,6 @@ def calcular_total_factura(monto_usd: float, aplicar_descuento: bool = False) ->
     total_pen = monto_usd * tipo_cambio
     
     if aplicar_descuento:
-        total_pen *= 0.80 # Realizando el error
+        total_pen *= 0.90 # 10% de descuento
         
     return round(total_pen, 2)
